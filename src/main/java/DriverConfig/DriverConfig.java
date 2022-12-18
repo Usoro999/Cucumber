@@ -24,8 +24,8 @@ public class DriverConfig {
         System.setProperty("webdriver.chrome.driver","C:\\Program Files\\Java\\chromedriver.exe");
         if (driver == null){
             ChromeOptions chromeOptions = new ChromeOptions();
-            chromeOptions.addArguments("");
-            driver = new ChromeDriver();
+            chromeOptions.addArguments("--headless");
+            driver = new ChromeDriver(chromeOptions);
         }
         driver.manage().window().maximize();
     }
