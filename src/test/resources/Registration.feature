@@ -1,4 +1,4 @@
-// feature file must be in the Resource directory!!!
+
 
 Feature: Complete registration on the https://demoqa.com/automation-practice-form
   @smoketest
