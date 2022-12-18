@@ -12,8 +12,8 @@ public class DriverConfig {
 
     public static WebDriver createDriver(Browsers browsers){
         switch (browsers){
-            case СHROMELOCAL -> createChromeLocal();
-            case CHROMEWEBMANAGER -> createChromeWebManager();
+            case СHROMELOCAL: createChromeLocal();
+            case CHROMEWEBMANAGER: createChromeWebManager();
         }
         return driver;
     }
