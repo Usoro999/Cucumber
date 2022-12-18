@@ -1,4 +1,4 @@
-package CucumberSteps;
+package ClasicTests;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
