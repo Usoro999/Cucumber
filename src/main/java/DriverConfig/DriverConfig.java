@@ -33,9 +33,9 @@ public class DriverConfig {
     public static void createChromeWebManager() {
         if(driver == null){
             ChromeOptions chromeOptions = new ChromeOptions();
-            chromeOptions.addArguments("");
+            chromeOptions.addArguments("--headless");
             WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
+            driver = new ChromeDriver(chromeOptions);
         }
        driver.manage().window().maximize();
     }
